@@ -9,14 +9,14 @@ class Contador extends StatefulWidget {
 }
 
 class _ContadorState extends State<Contador> {
-  MyContador contador = MyContador();
+  MyContador contador = MyContador(min: 0, max: 30);
 
   @override
   Widget build(BuildContext context) {
     return Column(children: [
       Row(mainAxisAlignment: MainAxisAlignment.center, children: [
         FloatingActionButton(
-            onPressed: () => setState(() => contador.aumentar()),
+            onPressed: () => setState(() => contador.diminuir()),
             child: const Text("-", style: TextStyle(fontSize: 30))),
         const SizedBox(width: 10),
         DecoratedBox(
@@ -28,13 +28,13 @@ class _ContadorState extends State<Contador> {
                 width: 60,
                 height: 60,
                 child: Center(
-                  child: Text(contador.toString(),
+                  child: Text("${contador.getNumero()}",
                       style:
                           const TextStyle(fontSize: 20, color: Colors.white)),
                 ))),
         const SizedBox(width: 10),
         FloatingActionButton(
-            onPressed: () => setState(() => contador.diminuir()),
+            onPressed: () => setState(() => contador.aumentar()),
             child: const Text("+", style: TextStyle(fontSize: 30))),
       ]),
       const SizedBox(height: 10),
