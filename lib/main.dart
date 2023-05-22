@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:navegacao_paginas/basket.dart';
-import 'package:navegacao_paginas/favorite.dart';
+import 'package:navegacao_paginas/contador/contador.dart';
 import 'package:navegacao_paginas/home.dart';
-import 'package:navegacao_paginas/person.dart';
+import 'package:navegacao_paginas/pizzaria/apresentacao.dart';
+import 'package:navegacao_paginas/sobrenos/sobre.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,12 +19,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      //home: Home()
       routes: {
-        '/': ((context) => Home()),
-        '/person':(context) => Person(),
-        '/basket':(context) => Basket(),
-        '/favorite':(context) => Favorite(),
+        '/': ((context) => const Home()),
+        '/contador':(context) => const ContadorPage(),
+        '/pizzaria':(context) => const PizzariaPage(),
+        '/sobrenos':(context) => const SobrePage(),
       },
     );
   }
