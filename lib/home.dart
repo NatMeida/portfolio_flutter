@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:navegacao_paginas/app_bar.dart';
+import 'package:portfolio_flutter/app_bar.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

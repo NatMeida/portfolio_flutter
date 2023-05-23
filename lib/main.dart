@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:navegacao_paginas/contador/contador.dart';
-import 'package:navegacao_paginas/home.dart';
-import 'package:navegacao_paginas/pizzaria/apresentacao.dart';
-import 'package:navegacao_paginas/sobrenos/sobre.dart';
+import 'package:portfolio_flutter/contador/contador.dart';
+import 'package:portfolio_flutter/home.dart';
+import 'package:portfolio_flutter/pizzaria/apresentacao.dart';
+import 'package:portfolio_flutter/sobrenos/sobre.dart';
 
 void main() {
   runApp(const MyApp());

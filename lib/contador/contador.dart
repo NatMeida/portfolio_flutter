@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:navegacao_paginas/app_bar.dart';
-import 'package:navegacao_paginas/contador/widget_contador.dart';
+import 'package:portfolio_flutter/app_bar.dart';
+import 'package:portfolio_flutter/contador/widget_contador.dart';
 
 void main() {
   runApp(const ContadorPage());

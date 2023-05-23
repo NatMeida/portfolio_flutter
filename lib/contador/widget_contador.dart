@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:navegacao_paginas/contador/conta_numeros.dart';
+import 'package:portfolio_flutter/contador/conta_numeros.dart';
 
 class Contador extends StatefulWidget {
   const Contador({super.key});
