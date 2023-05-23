@@ -49,7 +49,8 @@ class PizzariaPage extends StatelessWidget {
           height: 40,
           child: Align(
             child: Text ('Garanta já o seu jantar!', style: TextStyle(fontSize: 20),),)
-        )
+        ),
+        
       ),
     );
   }

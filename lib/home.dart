@@ -16,7 +16,11 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: NavBar(context,
         title: "Home",
-      )
+      ),
+      body: Center(child: Column(children: [
+        SizedBox(height: 40,),
+        Text("Bem-vindo!!", style: TextStyle(fontSize: 30, color: Colors.blue),)
+      ],)),
     );
   }
 }
