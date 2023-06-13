@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_flutter/app_bar.dart';
+import 'package:portfolio_flutter/bottom_bar.dart';
 
 class SobrePage extends StatelessWidget {
   const SobrePage({super.key});
@@ -11,18 +12,19 @@ class SobrePage extends StatelessWidget {
         title: "Sobre nós",
       ),
 
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Image(
+            Image(
               image: AssetImage("assets/agente.jpg"),
+              height: 300,
             ),
             SizedBox(
               width: 400,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: const [
+                children: [
                   Icon(Icons.info),
                   Text("Alunas do curso Desenvolvimento de Sistemas\ndo Colégio Técnico de Limeira",
                     overflow: TextOverflow.ellipsis,
@@ -33,6 +35,8 @@ class SobrePage extends StatelessWidget {
           ],
         )
       ),
+
+      bottomNavigationBar: BottomBar(context),
     );
   }
 }

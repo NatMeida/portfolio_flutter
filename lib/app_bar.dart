@@ -5,6 +5,7 @@ class NavBar extends AppBar {
   NavBar(BuildContext context, {String? title, Color? backgroundColor, bool? centerTitle, super.key}): super(
     title: title != null ? Text(title) : null,
     backgroundColor: backgroundColor,
+    foregroundColor: Colors.white,
     centerTitle: centerTitle,
     actions: [
       IconButton(

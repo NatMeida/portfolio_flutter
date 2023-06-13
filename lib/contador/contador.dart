@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_flutter/app_bar.dart';
+import 'package:portfolio_flutter/bottom_bar.dart';
 import 'package:portfolio_flutter/contador/widget_contador.dart';
 
 void main() {
@@ -21,8 +22,8 @@ class ContadorPage extends StatelessWidget {
           children: [
             Image.network(
               'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
-              width: 400,
-              height: 400,
+              width: 300,
+              height: 300,
             ),
 
             const SizedBox(height: 20),
@@ -32,7 +33,7 @@ class ContadorPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
-                color: Colors.blue
+                color: Colors.red
               ),
               textAlign: TextAlign.center,
             ),
@@ -42,7 +43,9 @@ class ContadorPage extends StatelessWidget {
             const Contador()
           ],
         )
-      )
+      ),
+
+      bottomNavigationBar: BottomBar(context),
     );
   }
 }

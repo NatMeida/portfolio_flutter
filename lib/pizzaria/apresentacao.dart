@@ -19,27 +19,29 @@ class PizzariaPage extends StatelessWidget {
         centerTitle: true
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                  Image.network("https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_960_720.jpg", height: 400),
+                  const Padding(
+                      padding: EdgeInsets.all(15),
+                      child: Text(
+                        "Bem vindo(a) ao aplicativo de encomendas da Pizzaria Forno à Lenha!", textAlign: TextAlign.center, style: TextStyle(fontSize: 16),)
+                  ),
+                ],
+              ),
+              const Column(
                 children: [
-                Image.network("https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_960_720.jpg", height: 400),
-                const Padding(
-                    padding: EdgeInsets.all(15),
-                    child: Text(
-                      "Bem vindo(a) ao aplicativo de encomendas da Pizzaria Forno à Lenha!", textAlign: TextAlign.center, style: TextStyle(fontSize: 16),)
-                ),
-              ],
-            ),
-            Column(
-              children: const [
-                MyWidget("Ingredientes de alta qualidade", Colors.green),
-                MyWidget("Maior diversidade de sabores", Colors.white),
-                MyWidget("Pizza quentinha que chega em 40 minutos", Colors.red)
-            ]),
-          ],
+                  MyWidget("Ingredientes de alta qualidade", Colors.green),
+                  MyWidget("Maior diversidade de sabores", Colors.white),
+                  MyWidget("Pizza quentinha que chega em 40 minutos", Colors.red)
+              ]),
+            ],
+          ),
         )
       ),
 
@@ -50,7 +52,6 @@ class PizzariaPage extends StatelessWidget {
           child: Align(
             child: Text ('Garanta já o seu jantar!', style: TextStyle(fontSize: 20),),)
         ),
-        
       ),
     );
   }

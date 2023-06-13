@@ -17,7 +17,7 @@ class _ContadorState extends State<Contador> {
       Row(mainAxisAlignment: MainAxisAlignment.center, children: [
         FloatingActionButton(
             onPressed: () => setState(() => contador.diminuir()),
-            child: const Text("-", style: TextStyle(fontSize: 30))),
+            child: const Text("-", style: TextStyle(fontSize: 30, color: Colors.white))),
         const SizedBox(width: 10),
         DecoratedBox(
             decoration: const BoxDecoration(
@@ -35,7 +35,7 @@ class _ContadorState extends State<Contador> {
         const SizedBox(width: 10),
         FloatingActionButton(
             onPressed: () => setState(() => contador.aumentar()),
-            child: const Text("+", style: TextStyle(fontSize: 30))),
+            child: const Text("+", style: TextStyle(fontSize: 30, color: Colors.white))),
       ]),
       const SizedBox(height: 10),
       Text('O valor do contador é:  ${contador.getNumero()}',
